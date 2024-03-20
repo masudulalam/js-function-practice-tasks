@@ -5,7 +5,10 @@ Take a number if the number is odd multiply it by 2 and return the result. If th
 
 */
 
-function oddToMultiplyAndEvenToDivide (num) {
+
+// *Task-2 solution:
+
+function processNumber (num) {
     if (num % 2 === 1) {
         return num * 2; 
     }
@@ -15,4 +18,4 @@ function oddToMultiplyAndEvenToDivide (num) {
 }
 
 const num = 99;
-console.log('Result:', oddToMultiplyAndEvenToDivide(num));
+console.log('Result:', processNumber(num));

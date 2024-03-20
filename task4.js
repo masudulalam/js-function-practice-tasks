@@ -8,8 +8,14 @@ Write a function called count_zero() which will take a binary string (Binary str
 
 // *Task-4 solution:
 function countZero (str) {
-    console.log(str);
+    let count = 0;
+    for(let i = 0; i < str.length; i++) {
+        if(str[i].includes(0)) {
+            count = count + 1;
+        }
+    }
+    return count;
 }
 
-const bString = '0111001101100011111';
-countZero(bString);
+const bString = '01110011011011111';
+console.log(countZero(bString));
